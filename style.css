@@ -1,0 +1,324 @@
+/* ===== Reset & Base ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+}
+
+body {
+  background: #fff;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* ===== Top Bar ===== */
+.top-bar {
+  background: #333;
+  color: #fff;
+  padding: 8px 20px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+}
+
+.top-bar .social-icons a {
+  color: #fff;
+  margin-left: 10px;
+  text-decoration: none;
+}
+
+/* ===== Navbar ===== */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  background: #fff;
+  border-bottom: 1px solid #eee;
+}
+
+.logo {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.logo span {
+  color: #555;
+}
+
+nav a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+}
+
+nav a:hover {
+  color: #00d4a4;
+}
+
+.btn {
+  background: #00d4a4;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.btn:hover {
+  background: #008f7a;
+}
+
+/* ===== Hero Section ===== */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 60px 80px;
+}
+
+.hero-text {
+  max-width: 50%;
+}
+
+.exp {
+  color: #00d4a4;
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.hero-text h1 {
+  font-size: 40px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.hero-text span {
+  color: #00d4a4;
+}
+
+.desc {
+  font-size: 15px;
+  margin-bottom: 20px;
+  color: #666;
+}
+
+.read-more {
+  display: inline-block;
+  padding: 10px 25px;
+  background: #333;
+  color: #fff;
+  border-radius: 25px;
+  text-decoration: none;
+  margin-bottom: 15px;
+  transition: 0.3s;
+}
+
+.read-more:hover {
+  background: #00d4a4;
+}
+
+/* ===== Social Links ===== */
+.social-links {
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.social-links a {
+  color: #333;
+  text-decoration: none;
+}
+
+.social-links a:hover {
+  color: #00d4a4;
+}
+
+/* ===== Slider Dots ===== */
+.slider-dots {
+  display: flex;
+  gap: 15px;
+  font-weight: bold;
+}
+
+.dot {
+  cursor: pointer;
+  padding: 5px 10px;
+  border-radius: 15px;
+  background: #f3f3f3;
+  transition: 0.3s;
+}
+
+.dot.active {
+  background: #00d4a4;
+  color: white;
+}
+
+/* ===== Hero Image ===== */
+.hero-image {
+  position: relative;
+  width: 400px;
+  height: 400px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 10px solid #f3f3f3;
+}
+
+.hero-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* ===== Sections (About, Services, Blog, Contact) ===== */
+section {
+  padding: 60px 20px;
+  background: #fff;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+section h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+  color: #00d4a4;
+  text-align: center;
+}
+
+section p {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+/* ===== Services Section ===== */
+.services ul {
+  list-style: none;
+  text-align: center;
+  padding: 0;
+}
+
+.services ul li {
+  background: #f3f3f3;
+  margin: 10px auto;
+  padding: 15px 20px;
+  max-width: 400px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* ===== Showcase Section ===== */
+.showcase .projects {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.showcase .projects img {
+  max-width: 300px;
+  width: 100%;
+  border-radius: 10px;
+  transition: transform 0.3s;
+}
+
+.showcase .projects img:hover {
+  transform: scale(1.05);
+}
+
+/* ===== Blog Section ===== */
+.blog article {
+  background: #f3f3f3;
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 600px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.blog article h3 {
+  margin-bottom: 10px;
+  color: #00d4a4;
+}
+
+/* ===== Contact Section ===== */
+.contact form {
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+  margin: 0 auto 20px;
+}
+
+.contact input,
+.contact textarea {
+  padding: 12px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  resize: none;
+  font-size: 16px;
+}
+
+.contact button {
+  background: #00d4a4;
+  color: #fff;
+  padding: 12px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+.contact button:hover {
+  background: #008f7a;
+}
+
+.contact p {
+  text-align: center;
+  margin-top: 10px;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 900px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-text {
+    max-width: 100%;
+    margin-bottom: 30px;
+  }
+
+  .hero-image {
+    width: 300px;
+    height: 300px;
+  }
+
+  nav {
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 10px;
+  }
+
+  nav a {
+    margin: 5px 10px;
+  }
+}
+
+@media (max-width: 500px) {
+  header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .btn {
+    margin-top: 10px;
+  }
+}
+
